@@ -95,13 +95,11 @@ struct ReactagleView: View {
                 .fill(Color.blue)
                 .frame(width: parantSSize, height: parantSSize)
                 .border(.black, width: 2)
-            
             Rectangle()
                 .fill(Color.cyan)
                 .frame(width: parantSSize/sqrt(2), height: parantSSize/sqrt(2))
                 .border(.black, width: 2)
                 .rotationEffect(.init(degrees: 45))
-            
         }
     }
 }
@@ -126,7 +124,6 @@ struct PasswordInputView: View {
             } else {
                 TextField(title, text: $text)
             }
-            
             Button {
                 isSecure.toggle()
             } label: {
