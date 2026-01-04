@@ -23,7 +23,6 @@ struct RegisterView: View {
             .padding(.top, 20)
         Spacer()
         
-        
         ScrollView {
             ZStack {
                 Rectangle()
@@ -39,54 +38,17 @@ struct RegisterView: View {
                 Circle()
                     .frame(width: size/sqrt(2))
                     .foregroundColor(Color.green)
-                    
             }
             
             VStack(alignment: .leading, spacing: 5) {
-//                Text("Full Name")
-//                    .font(.subheadline)
-//                    .padding(.leading)
-//                TextField("Enter Your name", text: $userName)
-//                    .padding()
-//                    .background(Color.gray.opacity(0.1))
-//                    .cornerRadius(10)
                 TextLabel(title: "Full Name")
                 InputView(title: "Enter Your name", text: $userName)
-//                Text("Last Name")
-//                    .font(.subheadline)
-//                    .padding(.leading)
-                
-//                TextField("Enter Your Last name", text: $userLastName)
-//                    .padding()
-//                    .background(Color.gray.opacity(0.1))
-//                    .cornerRadius(10)
                 TextLabel(title: "Last Name")
                 InputView(title: "Enter Your Last name", text: $userLastName)
-//                
-//                Text("Email")
-//                    .font(.subheadline)
-//                    .padding(.leading)
-                
-//                TextField("Enter Your email", text: $userEmail)
-//                    .padding()
-//                    .background(Color.gray.opacity(0.1))
-//                    .cornerRadius(10)
                 TextLabel(title: "Email")
                 InputView(title: "Enter Your email", text: $userEmail)
-                
-//                Text("Password")
-//                    .font(.subheadline)
-//                    .padding(.leading)
-                
-//                SecureField("Enter Your password", text: $userPassword)
-//                    .padding()
-//                    .background(Color.gray.opacity(0.1))
-//                    .cornerRadius(10)
-//                    .padding(.bottom, 50)
-//               
                 TextLabel(title: "Password")
                 PasswordInputView(title: "Enter Your password", text: $userPassword)
-                
                 
                 Button {
                     print("Dismiss")
